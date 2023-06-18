@@ -36,6 +36,8 @@ docker pull seanwrightsec/docker-to-the-security:simple-http-server
 docker run -p 80:80 simple-http-server
 ```
 
+To stop the service simply hit `Ctrl` + `C`.
+
 ## As a Eductional Tool
 
 Docker provides a great and safer way of having services with insecure configuration or known vulnerabilities. This is a great way to help from an education point of view, allow security professionals to spin these instances up and show how an attack could potential exploit this insecure configuration or vulnerabilities,
@@ -57,6 +59,8 @@ Alternatively you can download and run this image from [Docker Hub](https://hub.
 docker pull seanwrightsec/docker-to-the-security:http-server-trace
 docker run -p 80:80 http-server-trace
 ```
+
+To stop the service simply hit `Ctrl` + `C`.
 
 ## Easier to Run a Standalone Security Tool
 
@@ -82,6 +86,8 @@ docker run testssl <site-to-scan>
 
 *Where `<site-to-scan>` is the website which you would like to testssl.sh to scan against (for example `www.google.co.uk`).*
 
+To stop the service simply hit `Ctrl` + `C`.
+
 ## Running a Security Service
 
 Using Docker along with Docker Compose makes it far easier and simpler to spin up a security related service. This saves a lot of time and frustration, not to mention making it easier for things such as spinning up new instances.
@@ -98,6 +104,12 @@ docker-compose up -d
 ```
 
 You can then access the service on [http://localhost:8080](http://localhost:8080), using the username `admin@opencti.io` and the password `changeme`.
+
+To stop the service run the following:
+
+```shell
+docker-compose down
+```
 
 ***Please be aware that it takes several minutes for the service to become available.***
 
