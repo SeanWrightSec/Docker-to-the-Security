@@ -105,7 +105,7 @@ docker-compose up -d
 
 You can then access the service on [http://localhost:8080](http://localhost:8080), using the username `admin@opencti.io` and the password `changeme`.
 
-To stop the service run the following:
+To stop the service run the following with the `opencti` directory:
 
 ```shell
 docker-compose down
