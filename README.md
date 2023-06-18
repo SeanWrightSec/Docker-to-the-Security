@@ -28,6 +28,13 @@ docker build -f simple-http-server/Dockerfile -t simple-http-server .
 docker run -p 80:80 simple-http-server
 ```
 
+Alternatively you can download and run this image from [Docker Hub](https://hub.docker.com/r/seanwrightsec/docker-to-the-security):
+
+```shell
+docker pull seanwrightsec/docker-to-the-security:simple-http-server
+docker run -p 80:80 simple-http-server
+```
+
 ## As a Eductional Tool
 
 Docker provides a great and safer way of having services with insecure configuration or known vulnerabilities. This is a great way to help from an education point of view, allow security professionals to spin these instances up and show how an attack could potential exploit this insecure configuration or vulnerabilities,
@@ -43,6 +50,13 @@ docker build -f http-server-trace/Dockerfile -t http-server-trace .
 docker run -p 80:80 http-server-trace
 ```
 
+Alternatively you can download and run this image from [Docker Hub](https://hub.docker.com/r/seanwrightsec/docker-to-the-security):
+
+```shell
+docker pull seanwrightsec/docker-to-the-security:http-server-trace
+docker run -p 80:80 http-server-trace
+```
+
 ## Easier to Run a Standalone Security Tool
 
 Docker can provide a great way to abstract some of the complexities of running security related tooling. Not to mention making it far easier for others to run the tooling (without having the need to go through the process of installing those tools).
@@ -55,6 +69,13 @@ In order to build and run this exmaple, execture the following:
 
 ```shell
 docker build -f testssl/Dockerfile -t testssl .
+docker run testssl <site-to-scan>
+```
+
+Alternatively you can download and run this image from [Docker Hub](https://hub.docker.com/r/seanwrightsec/docker-to-the-security):
+
+```shell
+docker pull seanwrightsec/docker-to-the-security:testssl
 docker run testssl <site-to-scan>
 ```
 
