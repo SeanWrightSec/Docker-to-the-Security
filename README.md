@@ -93,6 +93,7 @@ This example is a Docker Compose example, allowing one to run an [OpenCTI](https
 In order to build and run this exmaple, execture the following:
 
 ```shell
+cd opencti
 docker-compose up -d
 ```
 
