@@ -13,6 +13,7 @@ There are several use case for Docker from a security perspective (and not limit
 * As an eduction tool
 * As a means to make it easier to run a security tool
 * As a means to running security service easily (using the likes of Docker Compose)
+* As a security toolset within a CI/CD pipeline (such as GitHub actions)
 * As a research tool
 
 ## Basic Example
