@@ -13,6 +13,7 @@ There are several use case for Docker from a security perspective (and not limit
 * As an eduction tool
 * As a means to make it easier to run a security tool
 * As a means to running security service easily (using the likes of Docker Compose)
+* As a research tool
 
 ## Basic Example
 
@@ -29,6 +30,8 @@ docker run -p 80:80 simple-http-server
 
 ## As a Eductional Tool
 
+Docker provides a great and safer way of having services with insecure configuration or known vulnerabilities. This is a great way to help from an education point of view, allow security professionals to spin these instances up and show how an attack could potential exploit this insecure configuration or vulnerabilities,
+
 ### http-server-trace
 
 This example is a simple Apache HTTPD instance where the configuration has been modified to enable the HTTP TRACE method (setting the configuration option `TraceEnable` to `on`).
@@ -41,6 +44,8 @@ docker run -p 80:80 http-server-trace
 ```
 
 ## Easier to Run a Standalone Security Tool
+
+Docker can provide a great way to abstract some of the complexities of running security related tooling. Not to mention making it far easier for others to run the tooling (without having the need to go through the process of installing those tools).
 
 ### testssl
 
@@ -57,6 +62,8 @@ docker run testssl <site-to-scan>
 
 ## Running a Security Service
 
+Using Docker along with Docker Compose makes it far easier and simpler to spin up a security related service. This saves a lot of time and frustration, not to mention making it easier for things such as spinning up new instances.
+
 ### opencti
 
 This example is a Docker Compose example, allowing one to run an [OpenCTI](https://github.com/OpenCTI-Platform/docker) instance.
@@ -70,3 +77,7 @@ docker-compose up -d
 You can then access the service on [http://localhost:8080](http://localhost:8080), using the username `admin@opencti.io` and the password `changeme`.
 
 ***Please be aware that it takes several minutes for the service to become available.***
+
+## Research Tool
+
+Docker can also be used as a means for researching security vulnerabilities in a piece of software. For example have a look at the [spring-rce-poc](https://github.com/SeanWrightSec/spring-rce-poc) and [CVE-2022-42889-PoC](https://github.com/SeanWrightSec/CVE-2022-42889-PoC) exmaples.
