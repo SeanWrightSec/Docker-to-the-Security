@@ -116,3 +116,7 @@ docker-compose down
 ## Research Tool
 
 Docker can also be used as a means for researching security vulnerabilities in a piece of software. For example have a look at the [spring-rce-poc](https://github.com/SeanWrightSec/spring-rce-poc) and [CVE-2022-42889-PoC](https://github.com/SeanWrightSec/CVE-2022-42889-PoC) exmaples.
+
+# PowerPoint Presentation
+
+The PowerPoint presentation from the talk is also available in this repository: [Docker to the Security.pptx](./Docker%20to%20the%20Security.pptx)
